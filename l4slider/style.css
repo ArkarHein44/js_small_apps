@@ -1,0 +1,6 @@
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
