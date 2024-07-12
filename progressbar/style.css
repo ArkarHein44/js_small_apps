@@ -18,6 +18,7 @@ body{
     height: 20px;
     background-color: #ddd;
     margin-bottom: 20px;
+    border-radius: 10px;
 }
 
 .progress .progress-bar{
@@ -26,6 +27,7 @@ body{
     background-color: forestgreen;
 
     position: relative;
+    border-radius: 10px;
 }
 
 .progress .progress-bar::before{
