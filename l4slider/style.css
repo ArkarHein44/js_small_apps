@@ -42,7 +42,7 @@ body{
 
     padding: 100px;
 
-    display: none;
+    /* display: none; */
 }
 
 .carousel-item .user{
