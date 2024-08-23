@@ -12,3 +12,66 @@ body{
     margin: 0;
 
 }
+
+.container{
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    
+    padding: 10px;
+
+}
+
+.form-control{
+    width: 100%;
+    border: 1px soldi #ccc;
+
+    padding: 10px 20px;
+    margin-bottom: 10px;
+}
+
+.form-control:focus{
+    outline: none;
+}
+
+.btn{
+    width: 48%;
+    background-color: steelblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.btn:focus{
+    outline: 0;
+    opacity: 0.9;
+}
+
+.list-group{
+    height: 500px;
+    list-style-type: none;
+
+    padding: 0;
+    margin: 0;
+
+    overflow-y: scroll;
+}
+
+.list-group li a{
+    background-color: #f6f6f6;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #ddd;
+
+    display: block;
+    padding: 15px;
+    margin-top: -1px;
+
+}
+
+.list-group li a:hover{
+    background-color: #f1f1f1;
+}
