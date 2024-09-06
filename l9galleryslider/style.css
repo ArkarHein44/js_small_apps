@@ -39,3 +39,66 @@ body{
 }
 
 
+.modal{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+   display: none;
+}
+
+.modal .modal-img{
+    width: 600px;
+
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+
+}
+
+.modal .caption{
+    width: 600px;
+    height: 10px;
+/*    background-color: steelblue;*/
+    color: #aaa;
+
+    margin: auto;
+    margin-top: 20px;
+}
+
+.modal .modal-img,.modal .caption{
+    animation-name: myani;
+    animation-duration: .6s;
+}
+
+@keyframes  myani{
+    from{
+        transform: scaleX(0);
+    }
+    to{
+        transform: scaleX(1);
+    }
+}
+
+
+.btn-close{
+    color: #aaa;
+    font-size: 40px;
+
+    font-weight: bold;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+
+    cursor: pointer;
+
+    transition: color .3s;
+}
+
+.btn-close:hover{
+    color: #ddd;
+}
