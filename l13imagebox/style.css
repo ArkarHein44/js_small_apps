@@ -1,0 +1,16 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #999;
+
+    display: grid;    
+    place-items: center;
+
+    padding: 0;
+    margin: 0;
+}
