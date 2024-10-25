@@ -15,6 +15,10 @@ getmap.addEventListener('click',function(e){
     // console.log(e.target);
 
     circleidx ++;
+
+    // if(circleidx > 3){
+    //     circleidx = 0;
+    // }
     
     // console.log(circleidx);
 
@@ -30,15 +34,23 @@ getmap.addEventListener('click',function(e){
         newspan.id = circleidx;
 
         newspan.style.left = `${offx}px`;
-        newspan.style.right = `${offy}px`;
+        newspan.style.top = `${offy}px`;
 
         //console.log(newspan);
 
-        if(getsmallcolor.selectedIndex > 0 && getmeduimcolor.selectedIndex > 0 && getlargecolor.selectedIndex > 0){
+        if(getsmallcolor.selectedIndex > 0){
             newspan.style.setProperty('--small-color',getsmallcolor.value);
-            newspan.style.setProperty('--medium-color',getmediumcolor.value);
+        }
+
+        if( getmeduimcolor.selectedIndex > 0){            
+            newspan.style.setProperty('--medium-color', getmeduimcolor.value);
+        
+        }
+
+        if(getlargecolor.selectedIndex > 0){
+           
             newspan.style.setProperty('--large-color',getlargecolor.value);
-            console.log('hi');
+            
         }
 
         this.appendChild(newspan);
